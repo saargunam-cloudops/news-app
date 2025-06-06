@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+
+# PyInstaller
+dist/
+build/
+
+# IDEs
+.vscode/
+.idea/
+
+# Python egg info
+*.egg-info/
+.eggs/
+
+# Logs
+*.log
+
+# Flask specific
+instance/
+*.sqlite3
+
+# OS files
+.DS_Store
+Thumbs.db
