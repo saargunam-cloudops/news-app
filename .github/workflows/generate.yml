@@ -2,7 +2,7 @@ name: Deploy News Dashboard to GitHub Pages
 
 on:
   schedule:
-    - cron: "0 * * * *"  # Runs every hour
+    - cron: "0 */2 * * *"  # Runs every two hours
   workflow_dispatch:      # Allow manual trigger
 
 permissions:
