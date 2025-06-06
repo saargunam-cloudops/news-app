@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Latest News Dashboard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 1em;
+        }
+        h2 {
+            color: #ffffff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 0.5em;
+            margin-top: 0;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2em;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .news-section {
+            background-color: #1e1e1e;
+            padding: 1.5em;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 1em;
+            padding-bottom: 0.5em;
+            border-bottom: 1px solid #333;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        a {
+            text-decoration: none;
+            color: #bb86fc;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+        .source {
+            font-style: italic;
+            color: #b0b0b0;
+            font-size: 0.9em;
+        }
+        .date {
+            font-size: 0.8em;
+            color: #b0b0b0;
+        }
+        .timestamp {
+            text-align: center;
+            margin-bottom: 2em;
+            font-size: 0.9em;
+            color: #b0b0b0;
+        }
+        .refresh-button {
+            display: block;
+            width: fit-content;
+            margin: 1em auto 2em auto;
+            padding: 0.8em 1.5em;
+            background-color: #03dac6;
+            color: #121212;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .refresh-button:hover {
+            background-color: #00c4b4;
+        }
+        @media (max-width: 768px) {
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Latest News Dashboard</h1>
+    <a href="/refresh" class="refresh-button">🔄 Refresh News</a>
+    <p class="timestamp">🕒 Updated: 2025-06-06 20:10:28</p>
+    <div class="dashboard-grid">
+        <div class="news-section"><h2>🇮🇳 India News (Last 24 Hours)</h2><ul>
+            <li>
+                <h3><a href="https://www.thehindu.com/news/national/haryana/haryana-ima-seeks-clarity-on-state-govts-cashless-treatment-scheme-for-accident-victims/article69665731.ece" target="_blank" rel="noopener noreferrer">Haryana IMA seeks clarity on State govt.’s cashless treatment scheme for accident victims</a></h3>
+                <p class="source">Source: The Hindu</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:45:38 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.thehindu.com/news/national/karnataka/karnataka-to-establish-care-centres-for-mentally-ill-in-four-districts/article69666193.ece" target="_blank" rel="noopener noreferrer">Karnataka to establish care centres for mentally ill in four districts</a></h3>
+                <p class="source">Source: The Hindu</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:42:15 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.thehindu.com/news/national/tamil-nadu/kidney-transplant-in-tamil-nadu-sets-record-for-shortest-wait-time/article69664672.ece" target="_blank" rel="noopener noreferrer">Kidney transplant in Tamil Nadu sets record for shortest wait time</a></h3>
+                <p class="source">Source: The Hindu</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:19:55 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://timesofindia.indiatimes.com/india/vijay-mallya-relates-how-he-told-arun-jaitley-he-was-flying-to-the-uk-before-he-left-india/articleshow/121683988.cms" target="_blank" rel="noopener noreferrer">Vijay Mallya relates how he told Arun Jaitley he was flying to the UK before he left India</a></h3>
+                <p class="source">Source: Times of India</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:13:05 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.thehindu.com/news/national/tamil-nadu/justice-janarthanams-moments-of-glory/article69665846.ece" target="_blank" rel="noopener noreferrer">Justice Janarthanam’s  moments of glory</a></h3>
+                <p class="source">Source: The Hindu</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:10:46 GMT</p>
+            </li>
+        </ul></div>
+        <div class="news-section"><h2>🌍 World News (Last 24 Hours)</h2><ul>
+            <li>
+                <h3><a href="https://www.theguardian.com/us-news/2025/jun/06/us-house-prayer-republican-mary-miller" target="_blank" rel="noopener noreferrer">Outrage after Republican representative disparages Sikh prayer in the US House</a></h3>
+                <p class="source">Source: The Guardian World</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:47:20 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.theguardian.com/us-news/2025/jun/06/trump-chinese-delegation-trade-talks-london" target="_blank" rel="noopener noreferrer">Trump announces US-China trade talks in London next week</a></h3>
+                <p class="source">Source: The Guardian World</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:47:06 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.bbc.com/news/articles/c3e5y4g5qxno" target="_blank" rel="noopener noreferrer">How Trump and Musk are still linked - despite falling out</a></h3>
+                <p class="source">Source: BBC World News</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:12:19 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.theguardian.com/technology/2025/jun/06/high-court-tells-uk-lawyers-to-urgently-stop-misuse-of-ai-in-legal-work" target="_blank" rel="noopener noreferrer">High court tells UK lawyers to stop misuse of AI after fake case-law citations</a></h3>
+                <p class="source">Source: The Guardian World</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:00:21 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.bbc.com/news/articles/czdyeld2m2yo" target="_blank" rel="noopener noreferrer">Police search for Washington man accused of killing his 3 daughters</a></h3>
+                <p class="source">Source: BBC World News</p>
+                <p class="date">Published: Fri, 06 Jun 2025 18:16:35 GMT</p>
+            </li>
+        </ul></div>
+        <div class="news-section"><h2>📈 Indian Stock Market & Finance (Last 24 Hours)</h2><ul>
+            <li>
+                <h3><a href="https://economictimes.indiatimes.com/markets/stocks/news/sbi-mf-goldman-sachs-others-buy-1-8-stake-in-bajaj-finserv-for-rs-5506-crore/articleshow/121680580.cms" target="_blank" rel="noopener noreferrer">SBI MF, Goldman Sachs, others buy 1.8% stake in Bajaj Finserv for Rs 5,506 crore</a></h3>
+                <p class="source">Source: Economic Times Markets</p>
+                <p class="date">Published: Fri, 06 Jun 2025 16:35:11 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://economictimes.indiatimes.com/markets/stocks/news/trumps-50-steel-tariff-a-big-blow-to-indias-exports-explained/videoshow/121679488.cms" target="_blank" rel="noopener noreferrer">Trump’s 50% Steel Tariff: A Big Blow to India’s Exports? | Explained</a></h3>
+                <p class="source">Source: Economic Times Markets</p>
+                <p class="date">Published: Fri, 06 Jun 2025 15:16:28 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://economictimes.indiatimes.com/markets/stocks/news/fed-should-cut-interest-rate-by-a-full-point-trump-says/articleshow/121678831.cms" target="_blank" rel="noopener noreferrer">Fed should cut interest rate by a full point, Trump says</a></h3>
+                <p class="source">Source: Economic Times Markets</p>
+                <p class="date">Published: Fri, 06 Jun 2025 14:34:35 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://economictimes.indiatimes.com/markets/stocks/news/mcx-gets-sebi-nod-to-launch-electricity-derivatives/articleshow/121678811.cms" target="_blank" rel="noopener noreferrer">MCX gets Sebi nod to launch electricity derivatives</a></h3>
+                <p class="source">Source: Economic Times Markets</p>
+                <p class="date">Published: Fri, 06 Jun 2025 14:33:14 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://economictimes.indiatimes.com/markets/web-stories/these-5-stocks-show-consistent-growth-in-quarterly-eps/slideshow/121678593.cms" target="_blank" rel="noopener noreferrer">These 5 stocks show consistent growth in quarterly EPS</a></h3>
+                <p class="source">Source: Economic Times Markets</p>
+                <p class="date">Published: Fri, 06 Jun 2025 14:22:14 GMT</p>
+            </li>
+        </ul></div>
+        <div class="news-section"><h2>💻 Global Tech News (Last 24 Hours)</h2><ul>
+            <li>
+                <h3><a href="https://techcrunch.com/2025/06/06/the-trump-musk-feud-has-been-great-for-x-which-jumped-up-the-app-store-charts/" target="_blank" rel="noopener noreferrer">The Trump-Musk feud has been great for X, which jumped up the App Store charts</a></h3>
+                <p class="source">Source: TechCrunch</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:45:27 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.theverge.com/news/681762/google-gemini-scheduled-actions-planned-tasks" target="_blank" rel="noopener noreferrer">Google Gemini can now handle scheduled tasks like an assistant</a></h3>
+                <p class="source">Source: The Verge</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:39:34 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://techcrunch.com/2025/06/06/figure-ai-ceo-skips-live-demo-sidesteps-bmw-deal-questions-on-stage-at-tech-conference/" target="_blank" rel="noopener noreferrer">Figure AI CEO skips live demo, sidesteps BMW deal questions onstage at tech conference</a></h3>
+                <p class="source">Source: TechCrunch</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:32:56 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.theverge.com/tech/681620/ray-ban-meta-glasses-deal-sale" target="_blank" rel="noopener noreferrer">The Ray-Ban Meta smart glasses are on sale for their best price to date</a></h3>
+                <p class="source">Source: The Verge</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:16:21 GMT</p>
+            </li>
+        
+            <li>
+                <h3><a href="https://www.theverge.com/fortnite/681222/fortnite-nintendo-switch-2-hands-on" target="_blank" rel="noopener noreferrer">Fortnite feels like a new game on the Switch 2</a></h3>
+                <p class="source">Source: The Verge</p>
+                <p class="date">Published: Fri, 06 Jun 2025 19:15:00 GMT</p>
+            </li>
+        </ul></div>
+    </div>
+</body>
+</html>
