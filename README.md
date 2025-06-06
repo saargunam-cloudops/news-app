@@ -1,4 +1,4 @@
-# Latest News Dashboard
+# Hot News Dashboard
 
 A Flask-based web application that aggregates and displays the latest news articles from multiple RSS feeds, categorized into India News, World News, Indian Finance, and Global Tech. The dashboard shows news from the last 24 hours and refreshes dynamically.
 
