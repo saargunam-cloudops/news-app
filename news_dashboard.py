@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string, redirect, url_for
+from flask import Flask, render_template_string
 import feedparser
 import datetime
 import html
@@ -205,22 +205,6 @@ def index():
             font-size: 0.9em;
             color: #b0b0b0;
         }}
-        .refresh-button {{
-            display: block;
-            width: fit-content;
-            margin: 1em auto 2em auto;
-            padding: 0.8em 1.5em;
-            background-color: #03dac6;
-            color: #121212;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            text-align: center;
-            transition: background-color 0.3s ease;
-        }}
-        .refresh-button:hover {{
-            background-color: #00c4b4;
-        }}
         @media (max-width: 768px) {{
             .dashboard-grid {{
                 grid-template-columns: 1fr;
@@ -235,7 +219,6 @@ def index():
 </head>
 <body>
     <h1>Latest News Dashboard</h1>
-    <a href="/refresh" class="refresh-button">🔄 Refresh News</a>
     <p class="timestamp">🕒 Updated: {now}</p>
     <div class="dashboard-grid">
         <div class="news-section">{india_section}</div>
@@ -246,10 +229,6 @@ def index():
 </body>
 </html>"""
     return render_template_string(html_content)
-
-@app.route('/refresh')
-def refresh():
-    return redirect(url_for('index'))
 
 if __name__ == '__main__':
     app.run(debug=True)
